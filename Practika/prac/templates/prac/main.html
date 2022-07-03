@@ -14,14 +14,14 @@
         <input type="checkbox" id="toggle-1">
     </div>
 </header>
-<form action="action_page.php">
+<form method="post">
     <div class="container">
         <h1>Выбор функции</h1>
         <p>Выберите функцию для того, чтобы продолжить</p>
 
-        <button type="submit" class="registerbtn"><a href="sp_komp.html">Редактировать список компетенций</a></button>
+        <button type="submit" class="registerbtn"><a href="{% url 'sp_komp'%}">Редактировать список компетенций</a></button>
 
-        <button type="submit" class="registerbtn"><a href="sp_dis.html">Редактировать список дисциплин</a></button>
+        <button type="submit" class="registerbtn"><a href="{% url 'sp_dis'%}">Редактировать список дисциплин</a></button>
 
         <button type="submit" class="registerbtn">Редактировать список преподавателей</button>
 
