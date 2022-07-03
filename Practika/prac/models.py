@@ -1,11 +1,13 @@
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
 
 class User(models.Model):
     userName = models.CharField(max_length=30, unique=True)
     userPass = models.CharField(max_length=30)
-    userRole = models.IntegerField(default=0)
+    userRole = models.IntegerField(default=1, validators=[MaxValueValidator(3),
+            MinValueValidator(1)])
 
     # Роли:
     # 1 - преподователь

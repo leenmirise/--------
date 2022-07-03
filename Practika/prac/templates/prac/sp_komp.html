@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Рабочие программы дисциплины</title>
-    <link href="sp_komp.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -14,8 +13,8 @@
         <input type="checkbox" id="toggle-1">
     </div>
 </header>
-<form method="POST">
-
+<form method="POST" action="{% url 'sp_komp'}">
+    {% csrf_token %}
     <div class="container">
         <h1>Список компетенций</h1>
         <p>Выберите действие для списка компетенций</p>

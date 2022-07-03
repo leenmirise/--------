@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Рабочие программы дисциплины</title>
-    <link href="sp_dis.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -14,7 +13,8 @@
         <input type="checkbox" id="toggle-1">
     </div>
 </header>
-<form method="POST">
+<form method="POST" action="{% url 'sp_dis'}">
+    {% csrf_token %}
 
     <div class="container">
         <h1>Список дисциплин</h1>

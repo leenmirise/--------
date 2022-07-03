@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Рабочие программы дисциплины</title>
-    <link href="main.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -14,22 +13,25 @@
         <input type="checkbox" id="toggle-1">
     </div>
 </header>
-<form method="post">
+<form >
     <div class="container">
         <h1>Выбор функции</h1>
         <p>Выберите функцию для того, чтобы продолжить</p>
+        <ul  class="widget-list">
 
-        <button type="submit" class="registerbtn"><a href="{% url 'sp_komp'%}">Редактировать список компетенций</a></button>
+            <li><a class="registerbtn" href="{% url 'sp_dis'%}">Редактировать список компетенций</a></li>
 
-        <button type="submit" class="registerbtn"><a href="{% url 'sp_dis'%}">Редактировать список дисциплин</a></button>
+            <li><a  class="registerbtn" href="{% url 'sp_dis'%}">Редактировать список дисциплин</a></li>
 
-        <button type="submit" class="registerbtn">Редактировать список преподавателей</button>
+            <li><a  class="registerbtn" href="#">Редактировать список преподавателей</a></li>
 
-        <button type="submit" class="registerbtn">Загрузить компетенции из учебного плана</button>
+            <li><a  class="registerbtn" href="#">Загрузить компетенции из учебного плана</a></li>
 
-        <button type="submit" class="registerbtn">Загрузить дисциплины из учебного плана</button>
+            <li><a  class="registerbtn" href="#">Загрузить дисциплины из учебного плана</a></li>
 
-        <button type="submit" class="registerbtn">Редактировать список преподавателей</button>
+
+
+        </ul>
     </div>
 
 </form>
@@ -59,8 +61,13 @@ header
     background-color:black;
     margin-bottom:50px
 }
+.cont {
+    flex-direction: column-reverse;
+}
+
 .container
 {
+    vertical-align: middle;
     width:100%;
     padding-right:15px;
     padding-left:15px;
@@ -120,8 +127,24 @@ hr {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 800pt;
     opacity: 0.9;
+    
+}
+.widget-list {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.widget-list a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  padding: 16px 20px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  transition: .3s linear;
 }
 
 .registerbtn:hover {
@@ -154,7 +177,7 @@ footer {
     width: 100%;
     color: silver;
     background-color: black;
-    position: relative;
+    position: absolute;
     text-align: center;
 }
 </style>
