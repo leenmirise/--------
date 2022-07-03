@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <title>Рабочие программы дисциплины</title>
+    <link href="sp_komp.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <a href="#" id="logo">Рабочие программы дисциплины</a>
+        <label for="toggle-1" class="toggle-menu"><i class="toggle-icon"></i></label>
+        <input type="checkbox" id="toggle-1">
+    </div>
+</header>
+<form action="action_page.php">
+
+    <div class="container">
+        <h1>Список компетенций</h1>
+        <p>Выберите действие для списка компетенций</p>
+
+        <div class="spisok1">
+            <select name="" size="10">
+                <option value="">Компетенция1Компетенция1Компетенция1Компетенция1</option>
+                <option value="">Компетенция2Компетенция2Компетенция2Компетенция2</option>
+                <option value="">Компетенция3Компетенция3Компетенция3Компетенция3</option>
+                <option value="">Компетенция4Компетенция4Компетенция4Компетенция4</option>
+                <option value="">Компетенция5Компетенция5Компетенция5Компетенция5</option>
+                <option value="">Компетенция6Компетенция6Компетенция6Компетенция6</option>
+                <option value="">Компетенция7Компетенция7Компетенция7Компетенция7</option>
+                <option value="">Компетенция8Компетенция8Компетенция8Компетенция8</option>
+                <option value="">Компетенция9Компетенция9Компетенция9Компетенция9</option>
+                <option value="">Компетенция10Компетенция10Компетенция10Компетенция10</option>
+            </select>
+
+        </div>
+
+        <div class="btns">
+            <button type="submit" class="komp">Добавить</button>
+
+            <button type="submit" class="komp">Удалить</button>
+
+            <button type="submit" class="komp">Редактировать</button>
+        </div>
+
+        <div class="spisok2">
+            <select name="" size="10">
+                <option value="">Индикатор1Индикатор1Индикатор1Индикатор1</option>
+                <option value="">Индикатор2Индикатор2Индикатор2Индикатор2</option>
+                <option value="">Индикатор3Индикатор3Индикатор3Индикатор3</option>
+                <option value="">Индикатор4Индикатор4Индикатор4Индикатор4</option>
+                <option value="">Индикатор5Индикатор5Индикатор5Индикатор5</option>
+                <option value="">Индикатор6Индикатор6Индикатор6Индикатор6</option>
+                <option value="">Индикатор7Индикатор7Индикатор7Индикатор7</option>
+                <option value="">Индикатор8Индикатор8Индикатор8Индикатор8</option>
+                <option value="">Индикатор9Индикатор9Индикатор9Индикатор9</option>
+                <option value="">Индикатор10Индикатор10Индикатор10Индикатор10</option>
+            </select>
+
+        </div>
+
+        <div class="btns">
+            <button type="submit" class="komp">Добавить</button>
+
+            <button type="submit" class="komp">Удалить</button>
+
+            <button type="submit" class="komp">Редактировать</button>
+        </div>
+
+    </div>
+
+</form>
+
+<div class="before-footer"></div>
+
+<footer>
+    <h3>&#169; Сайт ИСАУ, все права защищены.</h3>
+</footer>
+
+</body>
+
+</html>
+
+<style>
+    body
+{
+    margin:0;
+    overflow-x:hidden;
+    background-color: silver;
+}
+header
+{
+    width:100%;
+    display:table;
+    background-color:black;
+    margin-bottom:50px
+}
+.container
+{
+    width:100%;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+}
+
+@media (min-width: 1200px) {
+    .container{max-width:1140px}
+}
+
+#logo
+{
+    float: left;
+    font-size:25px;
+    text-transform:uppercase;
+    color:darkgrey;
+    font-weight:600;
+    text-decoration:none;
+    padding:11px 0
+}
+
+input[type=checkbox],label
+{
+    display:none
+}
+
+* {box-sizing: border-box}
+
+.container {
+    padding: 16px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.komp {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 12%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity:1;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.before-footer
+{
+    width: 100%;
+    height: 43px;
+    display: block;
+    clear: both;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    height: 44px;
+
+    width: 100%;
+    color: silver;
+    background-color: black;
+    position: relative;
+    text-align: center;
+}
+</style>
